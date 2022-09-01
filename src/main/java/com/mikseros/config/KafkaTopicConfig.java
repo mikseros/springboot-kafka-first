@@ -13,4 +13,10 @@ public class KafkaTopicConfig {
 		return TopicBuilder.name("mikseros")
 				.build();
 	}
+
+	@Bean
+	public NewTopic mikserosJsonTopic() {
+		return TopicBuilder.name("mikseros_json")
+				.build();
+	}
 }
